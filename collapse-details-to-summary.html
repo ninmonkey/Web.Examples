@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>collapse summary</title>
+    <style>
+        #content {
+            background-color: burlywood;
+        }
+
+        .container {
+            background-color: rgba(240, 128, 128, 0.336);
+            height: 25vh;
+            width: 50vw;
+            padding: 0.5em;
+            margin: 25vh auto 0;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .one {
+            flex: 2 250px;
+            background: lightblue;
+        }
+
+        .two {
+            background: rgb(230, 173, 230);
+            flex: 1 2 250px;
+        }
+
+        .three {
+            background: rgb(191, 230, 173);
+            flex: 1 2 250px;
+        }
+
+
+
+        details {
+            border: 1px solid #aaa;
+            border-radius: 4px;
+            padding: .5em .5em 0;
+        }
+
+        summary {
+            font-weight: bold;
+            margin: -.5em -.5em 0;
+            padding: .5em;
+        }
+
+        details[open] {
+            padding: .5em;
+        }
+
+        details[open] summary {
+            border-bottom: 1px solid #aaa;
+            margin-bottom: .5em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="item one">flex1</div>
+        <div class="item two">flex1</div>
+        <div class="item three">flex1</div>
+    </div>
+    <hr>
+    <div id="content">
+
+        <details>
+            <summary>I have keys but no doors. I have space but no room. You can enter but can’t leave. What am I?
+            </summary>
+            A keyboard.
+        </details>
+    </div>
+
+</body>
+
+</html>
